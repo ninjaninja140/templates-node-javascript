@@ -8,14 +8,11 @@ COPY --chown=node:node .yarn/ .yarn/
 COPY --chown=node:node src/ src/
 
 FROM base AS builder
-COPY --chown=node:node tsconfig.json .
 RUN corepack enable
 RUN yarn set version stable
 RUN yarn install
-RUN yarn compile
 
 FROM base AS runner
-COPY --chown=node:node --from=builder /usr/src/app/dist dist
 COPY --chown=node:node --from=builder /usr/src/app/yarn.lock .
 RUN yarn set version stable
 RUN yarn install

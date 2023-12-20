@@ -1,15 +1,15 @@
-# ninjaninja140's Templates - Node.js /w TypeScript
+# ninjaninja140's Templates - Node.js
 
 Hello and welcome!
 This is a template repository made for convenience to others by ninjaninja140!
 
-As the title suggests, this is a Node.js based TypeScript Template.
-If you would like to use the JavaScript version of this template, please go to <https://github.com/ninjaninja140/nodejs-template-js>
+As the title suggests, this is a Node.js based JavaScript Template.
+If you would like to use the TypeScript version of this template, please go to <https://github.com/ninjaninja140/nodejs-template-ts>
 This Template has been pre-configured with docker so you can go straight into your Dockerized project with little configuration required!
 
 ## Getting a copy
 
-To begin on your own project, you can either fork this repository and begin your project or you could select this repository at `ninjaninja140/nodejs-template-ts` as a template when creating a new repository or you could just clone it and work locally!
+To begin on your own project, you can either fork this repository and begin your project or you could select this repository at `ninjaninja140/nodejs-template-js` as a template when creating a new repository or you could just clone it and work locally!
 
 ## Setup & Install
 
@@ -45,7 +45,7 @@ Running `npm install` after following the section referenced above, you should b
 
 ### Testing
 
-If you have a different file structure than the one that is currently set up where `index.ts` is your main file please make sure to set up the `test` script in the `package.json` file to point to the file you wish to run.
+If you have a different file structure than the one that is currently set up where `index.js` is your main file please make sure to set up the `test` script in the `package.json` file to point to the file you wish to run.
 
 To test your application run either of the two commands:
 
@@ -54,16 +54,8 @@ To test your application run either of the two commands:
 
 Use CTRL or COMMAND + C to exit.
 
-### Compiling
-
-A pre-configured `tsconfig.json` file has been made for your convenience, any edits you wish to make, do them now before running the next command.
-To compile your project into JavaScript, run our pre-configured `yarn compile` command.
-
-**NOTE** When you are building this project with Docker, it is compiled in the build stages, so don't worry about compiling before building.
-
 ### Running
 
-If you haven't done so, please compile your project now.
 To run your application, run either of the two commands:
 
 -   NPM: `npm run start`

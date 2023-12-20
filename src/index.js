@@ -11,7 +11,7 @@
                                                         A Project by ninjaninja140 to create useful project templates!
     
 	@author ninjaninja140
-	@name ts-docker-template
+	@name js-docker-template
 	
 */
 

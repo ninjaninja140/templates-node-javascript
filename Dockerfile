@@ -17,6 +17,8 @@ RUN yarn compile
 FROM base AS runner
 COPY --chown=node:node --from=builder /usr/src/app/dist dist
 COPY --chown=node:node --from=builder /usr/src/app/yarn.lock .
+RUN yarn set version stable
+RUN yarn install
 RUN yarn workspaces focus --all --production
 RUN chown node:node /usr/src/app
 

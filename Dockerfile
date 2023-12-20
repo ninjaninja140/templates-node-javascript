@@ -10,6 +10,7 @@ COPY --chown=node:node src/ src/
 FROM base AS builder
 COPY --chown=node:node tsconfig.json .
 RUN corepack enable
+RUN yarn run install
 RUN yarn set version stable
 RUN yarn run install
 RUN yarn run compile

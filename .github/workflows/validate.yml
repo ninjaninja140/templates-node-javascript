@@ -11,7 +11,7 @@ jobs:
     check-code:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
 
             - run: docker build --tag ninjaninja140/ts-template .
               name: Running test docker build

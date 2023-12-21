@@ -15,8 +15,8 @@
 	
 */
 
-import process from 'node:process';
-import console from 'node:console';
+const process = require('node:process');
+const console = require('node:console');
 
 console.log('Welcome to my script!');
 

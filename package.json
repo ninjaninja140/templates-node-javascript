@@ -8,7 +8,6 @@
 		"url": "https://github.com/ninjaninja140"
 	},
 	"main": "src/index.js",
-	"type": "module",
 	"imports": {
 		"#root/*": "./src/*.js"
 	},
